@@ -1,0 +1,10 @@
+
+.home-main-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-main-img img{
+    height: 600px;
+    width: 600px;
+}
