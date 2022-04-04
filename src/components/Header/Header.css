@@ -1,0 +1,17 @@
+.header-container{
+    background-color: rgb(42, 239, 239);
+}
+.link-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.link-container a{
+    margin-left: 10px;
+    
+}
+.link-container a:hover{
+    color: orange;
+    border-bottom: 1px solid tomato;
+}
