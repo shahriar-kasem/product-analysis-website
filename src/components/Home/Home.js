@@ -25,14 +25,14 @@ const Home = () => {
                     <img src="https://www.maxpixel.net/static/photo/2x/Game-Cricketer-Ball-Cricket-Cricket-Ball-Sports-5470308.png" alt="" />
                 </div>
             </section>
-            <section className='home-customer-review mx-10 flex flex-col items-center'>
+            <section className='home-customer-review md:mx-5 mx-0 flex flex-col items-center'>
                 <h2 className='text-center text-2xl font-semibold mb-3'>What our customers say about us!</h2>
                 <div className='grid md:grid-cols-3 grid-cols-1
             gap-5'>
                     {
-                        products.slice(0,3).map(product => <Review
-                        key={product.id}
-                        product={product}
+                        products.slice(0, 3).map(product => <Review
+                            key={product.id}
+                            product={product}
                         ></Review>)
                     }
                 </div>
