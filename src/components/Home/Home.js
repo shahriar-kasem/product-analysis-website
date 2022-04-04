@@ -10,7 +10,7 @@ const Home = () => {
                     <h1 className='text-center text-orange-300 text-2xl font-medium  m-3 '>Choose quality products</h1>
                     <p className=''>Shop a wide collection of sports clothes and equipments. We don't compromise with our product qualities! We are promised to give our customers best things. Their satisfaction is our goal.</p>
                     <br />
-                    <div>
+                    <div className='ml-2'>
                         <button className='border-2 rounded-lg px-5 py-2 bg-red-400 text-white font-semibold'>Shop More</button>
                     </div>
                 </div>
