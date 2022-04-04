@@ -1,14 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useReviews from '../../hooks/useReviews';
 import Review from './Review/Review';
 
 const Reviews = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('customerReview.json')
-            .then(res => res.json())
-            .then(data => setProducts(data))
-    }, []);
+    const [products] = useReviews();
 
     return (
         <div className='reviews-container mx-5'>
