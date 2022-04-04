@@ -6,11 +6,10 @@ const Dashboard = () => {
     const [data] = useBusinessData([]);
 
     return (
-        <div className='dashboard-container'>
-            <h1>This is Dashboard. Total data: {data.length}</h1>
-            <div className='rechart-container grid grid-cols-2'>
-                <div className='line-chart'>
-                    <h3 className='text-center text-2xl'>Month wise sell</h3>
+        <div className='dashboard-container my-10'>
+            <div className='rechart-container grid md:grid-cols-2 grid-cols-1 gap-5 mx-5'>
+                <div className='line-chart border-4'>
+                    <h3 className='text-center text-2xl my-3 font-semibold text-red-400'>Month wise sell</h3>
                     <ResponsiveContainer width="80%" height={400}>
                         <LineChart data={data} margin={{
                             top: 5,
@@ -26,8 +25,8 @@ const Dashboard = () => {
                     </ResponsiveContainer>
 
                 </div>
-                <div className=''>
-                    <h3>Investment VS Revenue</h3>
+                <div className='area-chart border-4'>
+                    <h3 className='text-center text-2xl my-3 font-semibold text-red-400'>Investment VS Revenue</h3>
                     <ResponsiveContainer width="80%" height={400}>
                         <AreaChart data={data} margin={{
                             top: 5,
@@ -43,7 +42,8 @@ const Dashboard = () => {
                         </AreaChart>
                     </ResponsiveContainer>
                 </div>
-                <div>
+                <div className='bar-chart border-4'>
+                    <h3 className='text-center text-2xl my-3 font-semibold text-red-400'>Investment VS Revenue</h3>
                     <ResponsiveContainer width="80%" height={400}>
                         <BarChart data={data} margin={{
                             top: 5,
@@ -59,16 +59,15 @@ const Dashboard = () => {
                         </BarChart>
                     </ResponsiveContainer>
                 </div>
-                <div>
-                    {/* <ResponsiveContainer width="100%" height="100%">
-                            <PieChart width={400} height={400}>
-                            <XAxis dataKey='month'></XAxis>
-                            <YAxis></YAxis>
+                <div className='pie-chart border-4'>
+                    <h3 className='text-center text-2xl my-3 font-semibold text-red-400'>Investment VS Revenue</h3>
+                    <ResponsiveContainer width="80%" height={400}>
+                        <PieChart>
                             <Tooltip></Tooltip>
-                            <Pie data={data} dataKey="investment"></Pie>
-                            <Pie data={data} dataKey="revenue"></Pie>
-                            </PieChart>
-                        </ResponsiveContainer> */}
+                            <Pie data={data} dataKey="investment" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label></Pie>
+                            <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8"></Pie>
+                        </PieChart>
+                    </ResponsiveContainer>
                 </div>
             </div>
         </div>
