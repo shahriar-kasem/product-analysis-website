@@ -6,6 +6,7 @@ import './Home.css';
 
 const Home = () => {
     const [products] = useReviews();
+    const randomReview = products.length - 3 ;
 
     let navigate = useNavigate();
 
@@ -30,7 +31,7 @@ const Home = () => {
                 <div className='grid md:grid-cols-3 grid-cols-1
             gap-5'>
                     {
-                        products.slice(0, 3).map(product => <Review
+                        products.splice(Math.floor(Math.random()*randomReview),3).map(product => <Review
                         key={product.id}
                         product={product}
                         ></Review>)
