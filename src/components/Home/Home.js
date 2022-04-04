@@ -1,10 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Reviews/Review/Review';
 import './Home.css';
 
 const Home = () => {
     const [products] = useReviews();
+
+    let navigate = useNavigate();
 
     return (
         <div className='home-container md:p-2 p-5'>
@@ -15,7 +18,7 @@ const Home = () => {
                     <p className=''>Shop a wide collection of sports clothes and equipments. We don't compromise with our product qualities! We are promised to give our customers best things. Their satisfaction is our goal.</p>
                     <br />
                     <div className='ml-2'>
-                        <button className='border-2 rounded-lg px-5 py-2 bg-red-400 text-white font-semibold'>Shop More</button>
+                        <button onClick={() => navigate('/blogs')} className='border-2 rounded-lg px-5 py-2 bg-red-400 text-white font-semibold'>See More</button>
                     </div>
                 </div>
                 <div className='home-main-img'>
@@ -23,7 +26,7 @@ const Home = () => {
                 </div>
             </section>
             <section className='home-customer-review mx-10 flex flex-col items-center'>
-                <h2 className='text-center text-2xl font-semibold my-3'>What our customers say about us!</h2>
+                <h2 className='text-center text-2xl font-semibold mb-3'>What our customers say about us!</h2>
                 <div className='grid md:grid-cols-3 grid-cols-1
             gap-5'>
                     {
@@ -34,7 +37,7 @@ const Home = () => {
                     }
                 </div>
                 <br />
-                <button className='home-review-btn border-2 rounded-lg px-5 py-2 bg-red-400 text-white font-semibold'>See all reviews</button>
+                <button onClick={() => navigate('/reviews')} className='home-review-btn border-2 rounded-lg px-5 py-2 bg-red-400 text-white font-semibold'>See all reviews</button>
             </section>
         </div>
     );
