@@ -9,9 +9,11 @@
 }
 .link-container a{
     margin-left: 10px;
-    
+    border-bottom: 1px solid rgba(71, 71, 255, 0.619);
+    padding: 2px;
+    border-radius: 2px;
 }
 .link-container a:hover{
-    color: orange;
+    color: rgba(255, 166, 0, 0.936);
     border-bottom: 1px solid tomato;
 }
