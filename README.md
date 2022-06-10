@@ -3,8 +3,8 @@
 ## [Live site link](https://m-55-product-analysis-website-shahriarkasem.netlify.app/)
 Click here: https://m-55-product-analysis-website-shahriarkasem.netlify.app/ 
 
-## [Private repo link](https://github.com/programming-hero-web-course-4/product-analysis-website-shahriarkasem )
-Click here: https://github.com/programming-hero-web-course-4/product-analysis-website-shahriarkasem 
+## [Repo link](https://github.com/shahriar-kasem/product-analysis-website)
+Click here: https://github.com/shahriar-kasem/product-analysis-website
 
 ### Website overview:
 * Developed a project for product analysis purposes with react
