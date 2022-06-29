@@ -4,7 +4,7 @@
 Click here: https://m-55-product-analysis-website-shahriarkasem.netlify.app/ 
 
 ## [Repo link](https://github.com/shahriar-kasem/product-analysis-website)
-Click here: https://github.com/shahriar-kasem/product-analysis-website
+Click here: https://github.com/shahriarkasem/product-analysis-website
 
 ### Website overview:
 * Developed a project for product analysis purposes with react
